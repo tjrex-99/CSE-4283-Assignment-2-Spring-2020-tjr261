@@ -1,5 +1,5 @@
 # function for calculating BMI based on inputted weight in lbs and height in inches
-def BMI(w, h):
+def BMI(h, w):
     w *= 0.45
     h *= 0.025
     h2 = h * h
@@ -7,13 +7,13 @@ def BMI(w, h):
 
     cat = 'NONE'
 
-    if bmi <= 18.5:
+    if bmi < 18.5:
         cat = 'Underweight'
 
-    else if bmi > 18.5 and bmi <= 24.9:
+    elif bmi >= 18.5 and bmi <= 24.9:
         cat = 'Normal'
 
-    else if bmi > 24.9 and bmi <= 29.9:
+    elif bmi > 24.9 and bmi <= 29.9:
         cat = 'Overweight'
 
     else:
