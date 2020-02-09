@@ -10,7 +10,7 @@ from retire import *
 def interface():
 
     print('Calculate your BMI or the age you will be able to retire!')
-    print('To choose an option, enter the number corresponding to what you want to do. You can enter 0 at any time to exit.')
+    print('To choose an option, enter the number corresponding to what you want to do. You can enter 0 at any time to exit. All inputs must be integers.')
 
     # input for calculation choice
     while(1):
@@ -65,7 +65,7 @@ def interface():
                 break
 
             bmi_list = BMI(height, weight)
-            bmi_string = 'Your calculated BMI is ' + str(bmi_list[0]) + '. You are classified as ' + str(bmi_list[1]) + '.\n'
+            bmi_string = '\nYour calculated BMI is ' + str(bmi_list[0]) + '. You are classified as ' + str(bmi_list[1]) + '.\n'
             print(bmi_string)
 
         elif choice == '2':
@@ -148,7 +148,7 @@ def interface():
                 break
 
             r_age = retire(age, salary, (percentage / 100), goal)
-            print('Assuming you live until 100, you will save that much by age: ')
+            print('\nAssuming you live until 100, you will save that much by age: ')
             r_age = '\t' + str(r_age) + '\n'
             print(r_age)
 
