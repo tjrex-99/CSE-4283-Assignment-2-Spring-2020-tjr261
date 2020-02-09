@@ -1,3 +1,7 @@
+# CSE 4283 Software Testing and QA Assignment 2
+# by Timothy Reaux
+# BMI.py
+
 # function for calculating BMI based on inputted weight in lbs and height in inches
 def BMI(h, w):
     w *= 0.45
